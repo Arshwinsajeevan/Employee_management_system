@@ -39,20 +39,31 @@ It demonstrates clean CRUD operations with proper validation and soft delete han
 ### Backend
 
 cd backend
+
 venv\Scripts\activate
+
 pip install -r requirements.txt
+
 python manage.py migrate
+
 python manage.py runserver
 
 ### Frontend
+
 cd frontend
+
 npm install
+
 npm start
+
 The backend runs on http://127.0.0.1:8000
+
 The frontend runs on http://localhost:3000
 
 ### Notes
 
 Deleted employees are not removed from the database; they are marked as INACTIVE.
+
 INACTIVE employees do not appear in the active employee list.
+
 Basic validation and error handling are implemented.

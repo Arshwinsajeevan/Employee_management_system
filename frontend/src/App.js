@@ -12,7 +12,7 @@ function App() {
   });
 
   const fetchEmployees = async () => {
-    const res = await axios.get("http://127.0.0.1:8000/api/employees/active/");
+    const res = await axios.get("https://employee-management-system-o0od.onrender.com/api/employees/active/");
     setEmployees(res.data);
   };
 
@@ -27,7 +27,7 @@ function App() {
   const addEmployee = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://127.0.0.1:8000/api/employees/", {
+      await axios.post("https://employee-management-system-o0od.onrender.com/api/employees/", {
         ...form,
         salary: Number(form.salary)
       });
@@ -45,7 +45,7 @@ function App() {
   
 
   const deleteEmployee = async (id) => {
-    await axios.delete(`http://127.0.0.1:8000/api/employees/${id}/`);
+    await axios.delete(`https://employee-management-system-o0od.onrender.com/api/employees/${id}/`);
     fetchEmployees();
   };
 

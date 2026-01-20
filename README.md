@@ -4,6 +4,11 @@
 This project is a simple full-stack Employee Management System built as part of a Full Stack Developer Intern assessment.  
 It demonstrates clean CRUD operations with proper validation and soft delete handling.
 
+## 🚀 Live Demo
+
+https://employee-management-system9ems.netlify.app/
+**[View Demo](https://arshwin-sajeevan.vercel.app/)**
+
 ## Tech Stack
 - Backend: Django, Django REST Framework  
 - Frontend: React  

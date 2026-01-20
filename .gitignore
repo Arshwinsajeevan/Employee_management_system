@@ -13,6 +13,10 @@ db.sqlite3
 backend/db.sqlite3
 *.log
 
+# React build
+frontend/build/
+build/
+
 # Environment variables
 .env
 
